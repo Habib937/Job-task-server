@@ -118,7 +118,8 @@
 // });
 
 
-
+// job-task
+// whnqRSoefU0S1YlT
     
     
 
@@ -156,7 +157,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB URI and client setup
-const uri = "mongodb+srv://taskManager:YTgReGa7WlbFLshU@cluster0.bnqcs.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const uri = "mongodb+srv://job-task:whnqRSoefU0S1YlT@cluster0.0pthw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 const client = new MongoClient(uri, {
   serverApi: {
@@ -168,7 +169,7 @@ const client = new MongoClient(uri, {
 
 async function run() {
   try {
-    await client.connect(); // Ensure we connect to MongoDB
+    // await client.connect(); // Ensure we connect to MongoDB
 
     const database = client.db("taskDB");
     const taskDb = database.collection("tasks");
